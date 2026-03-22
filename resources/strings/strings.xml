@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<resources>
 <strings>
     <string id="AppName">CarbReminder</string>
     <string id="WaterReminder">DRINK WATER</string>
@@ -13,3 +14,4 @@
     <string id="EnableCalorieRemindersLabel">Calorie-Based Reminders</string>
     <string id="EnableHrRemindersLabel">HR Zone Reminders</string>
 </strings>
+</resources>

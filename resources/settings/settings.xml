@@ -1,36 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<settings>
-    <setting propertyKey="@Properties.enableTimeReminders" title="@Strings.EnableTimeRemindersLabel">
-        <settingConfig type="boolean" />
-    </setting>
-    <setting propertyKey="@Properties.waterIntervalMin" title="@Strings.WaterIntervalLabel">
-        <settingConfig type="numeric" min="5" max="120" />
-    </setting>
-    <setting propertyKey="@Properties.carbIntervalMin" title="@Strings.CarbIntervalLabel">
-        <settingConfig type="numeric" min="10" max="120" />
-    </setting>
+<resources>
+    <settings>
+        <setting propertyKey="@Properties.enableTimeReminders" title="@Strings.EnableTimeRemindersLabel">
+            <settingConfig type="boolean" />
+        </setting>
+        <setting propertyKey="@Properties.waterIntervalMin" title="@Strings.WaterIntervalLabel">
+            <settingConfig type="numeric" min="5" max="120" />
+        </setting>
+        <setting propertyKey="@Properties.carbIntervalMin" title="@Strings.CarbIntervalLabel">
+            <settingConfig type="numeric" min="10" max="120" />
+        </setting>
 
-    <setting propertyKey="@Properties.enableCalorieReminders" title="@Strings.EnableCalorieRemindersLabel">
-        <settingConfig type="boolean" />
-    </setting>
-    <setting propertyKey="@Properties.calorieThreshold" title="@Strings.CalorieThresholdLabel">
-        <settingConfig type="numeric" min="50" max="1000" />
-    </setting>
+        <setting propertyKey="@Properties.enableCalorieReminders" title="@Strings.EnableCalorieRemindersLabel">
+            <settingConfig type="boolean" />
+        </setting>
+        <setting propertyKey="@Properties.calorieThreshold" title="@Strings.CalorieThresholdLabel">
+            <settingConfig type="numeric" min="50" max="1000" />
+        </setting>
 
-    <setting propertyKey="@Properties.enableHrReminders" title="@Strings.EnableHrRemindersLabel">
-        <settingConfig type="boolean" />
-    </setting>
-    <setting propertyKey="@Properties.hrZoneThreshold" title="@Strings.HrZoneThresholdLabel">
-        <settingConfig type="list">
-            <listEntry value="3">Zone 3 (Tempo)</listEntry>
-            <listEntry value="4">Zone 4 (Threshold)</listEntry>
-            <listEntry value="5">Zone 5 (VO2max)</listEntry>
-        </settingConfig>
-    </setting>
-    <setting propertyKey="@Properties.hrZoneDurationMin" title="@Strings.HrZoneDurationLabel">
-        <settingConfig type="numeric" min="1" max="30" />
-    </setting>
-    <setting propertyKey="@Properties.maxHr" title="@Strings.MaxHrLabel">
-        <settingConfig type="numeric" min="120" max="220" />
-    </setting>
-</settings>
+        <setting propertyKey="@Properties.enableHrReminders" title="@Strings.EnableHrRemindersLabel">
+            <settingConfig type="boolean" />
+        </setting>
+        <setting propertyKey="@Properties.hrZoneThreshold" title="@Strings.HrZoneThresholdLabel">
+            <settingConfig type="list">
+                <listEntry value="3">Zone 3 (Tempo)</listEntry>
+                <listEntry value="4">Zone 4 (Threshold)</listEntry>
+                <listEntry value="5">Zone 5 (VO2max)</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.hrZoneDurationMin" title="@Strings.HrZoneDurationLabel">
+            <settingConfig type="numeric" min="1" max="30" />
+        </setting>
+        <setting propertyKey="@Properties.maxHr" title="@Strings.MaxHrLabel">
+            <settingConfig type="numeric" min="120" max="220" />
+        </setting>
+    </settings>
+</resources>

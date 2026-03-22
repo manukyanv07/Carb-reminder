@@ -40,17 +40,15 @@ class ReminderManager {
 
     //! Load user settings from properties
     function loadSettings() as Void {
-        var props = Application.Properties;
-
-        _enableTime = getBoolProp(props, "enableTimeReminders", true);
-        _waterIntervalSec = getNumProp(props, "waterIntervalMin", 20) * 60;
-        _carbIntervalSec = getNumProp(props, "carbIntervalMin", 30) * 60;
-        _enableCalorie = getBoolProp(props, "enableCalorieReminders", true);
-        _calorieThreshold = getNumProp(props, "calorieThreshold", 200);
-        _enableHr = getBoolProp(props, "enableHrReminders", true);
-        _hrZoneThreshold = getNumProp(props, "hrZoneThreshold", 4);
-        _hrZoneDurationSec = getNumProp(props, "hrZoneDurationMin", 5) * 60;
-        _maxHr = getNumProp(props, "maxHr", 185);
+        _enableTime = getBoolProp("enableTimeReminders", true);
+        _waterIntervalSec = getNumProp("waterIntervalMin", 20) * 60;
+        _carbIntervalSec = getNumProp("carbIntervalMin", 30) * 60;
+        _enableCalorie = getBoolProp("enableCalorieReminders", true);
+        _calorieThreshold = getNumProp("calorieThreshold", 200);
+        _enableHr = getBoolProp("enableHrReminders", true);
+        _hrZoneThreshold = getNumProp("hrZoneThreshold", 4);
+        _hrZoneDurationSec = getNumProp("hrZoneDurationMin", 5) * 60;
+        _maxHr = getNumProp("maxHr", 185);
     }
 
     //! Check all triggers. Returns alert dictionary or null.
@@ -223,9 +221,9 @@ class ReminderManager {
     }
 
     //! Safe boolean property getter
-    private function getBoolProp(props as Application.Properties, key as String, fallback as Boolean) as Boolean {
+    private function getBoolProp(key as String, fallback as Boolean) as Boolean {
         try {
-            var val = props.getValue(key);
+            var val = Application.Properties.getValue(key);
             if (val instanceof Boolean) {
                 return val as Boolean;
             }
@@ -235,9 +233,9 @@ class ReminderManager {
     }
 
     //! Safe numeric property getter
-    private function getNumProp(props as Application.Properties, key as String, fallback as Number) as Number {
+    private function getNumProp(key as String, fallback as Number) as Number {
         try {
-            var val = props.getValue(key);
+            var val = Application.Properties.getValue(key);
             if (val instanceof Number) {
                 return val as Number;
             }
