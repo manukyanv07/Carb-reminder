@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings>
+    <string id="AppName">CarbReminder</string>
+    <string id="WaterReminder">DRINK WATER</string>
+    <string id="CarbReminder">EAT CARBS</string>
+    <string id="WaterIntervalLabel">Water Interval (min)</string>
+    <string id="CarbIntervalLabel">Carb Interval (min)</string>
+    <string id="CalorieThresholdLabel">Calorie Threshold</string>
+    <string id="HrZoneThresholdLabel">HR Zone Alert Threshold</string>
+    <string id="HrZoneDurationLabel">HR Zone Duration (min)</string>
+    <string id="MaxHrLabel">Max Heart Rate (bpm)</string>
+    <string id="EnableTimeRemindersLabel">Time-Based Reminders</string>
+    <string id="EnableCalorieRemindersLabel">Calorie-Based Reminders</string>
+    <string id="EnableHrRemindersLabel">HR Zone Reminders</string>
+</strings>
