@@ -1,0 +1,11 @@
+{
+  "name": "carb-reminder-tests",
+  "private": true,
+  "description": "Test suite for Carb Reminder Connect IQ data field",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
