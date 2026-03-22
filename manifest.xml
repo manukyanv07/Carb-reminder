@@ -43,6 +43,7 @@
 
         <iq:permissions>
             <iq:uses-permission id="Fit" />
+            <iq:uses-permission id="Attention" />
         </iq:permissions>
 
         <iq:languages>

@@ -54,10 +54,15 @@ class ReminderManager {
     //! Check all triggers. Returns alert dictionary or null.
     //! Alert format: { :type => :water/:carb, :message => String, :color => Number }
     function check(info as Activity.Info) as Dictionary? {
+        // Only fire alerts when timer is actively running
+        if (info.timerState != Activity.TIMER_STATE_ON) {
+            return null;
+        }
+
         // Reload settings periodically (in case changed mid-activity)
         loadSettings();
 
-        var elapsed = info.elapsedTime;
+        var elapsed = info.timerTime;
         if (elapsed == null) {
             return null;
         }
